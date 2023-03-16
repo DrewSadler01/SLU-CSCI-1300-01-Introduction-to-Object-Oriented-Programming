@@ -1,0 +1,8 @@
+word=input('type in something: ')
+reverse=word.split()
+count=word.count(' ')
+a=str(reverse[2]+' ')
+b=str(reverse[1]+' ')
+c=str(reverse[0])
+whole=(a+b+c)
+print('-'.join(whole.split(' ')))

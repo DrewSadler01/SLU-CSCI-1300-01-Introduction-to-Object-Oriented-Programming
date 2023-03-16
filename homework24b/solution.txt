@@ -1,0 +1,12 @@
+Homework 24b:
+i. myHouse is yourHouse checks aliases of the same underlying objects, and if they are equal to the two identifiers, but since they don't reference the same underlying object,this statment has to be false.
+ii. myHouse == yourHouse relies on what the __eq__ is comprised of in the class, if that method doesn't have any restrictions, then this would be false since they're not the same shaped house.
+iii. myHouse = yourHouse makes the myHouse identifier equal to yourHouse identifier, and makes it all assigned to the same underlying objects.
+iv. myHouse = copy(yourHouse) makes a shallow copy of yourHouse, which then constructs a compound objects and makes the references and places it into the object in the yourHouse object original.
+v. myHouse = deepcopy(yourHouse) making a deep copy of yourHouse, contruscting a compound object, then inserts copies of itself into the original object yourHouse.
+
+vi.
+class House:
+    def __share__ (self, yourHouse, myHouse):
+	ourHouse=(yourHouse._myHouse)
+	return ourHouse
